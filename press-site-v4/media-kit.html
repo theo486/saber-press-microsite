@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saber — Press & Media Kit</title>
+<meta name="description" content="Saber press & media kit: boilerplate, key facts, product and company information, brand assets, founder sheets and press contact.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/saber.css">
+<style>
+  html{scroll-behavior:smooth}
+  .mk-sec{scroll-margin-top:110px}
+  .mknav{position:sticky;top:42px;z-index:40;background:rgba(14,20,28,.92);backdrop-filter:blur(8px);
+      border-bottom:1px solid #243140;display:flex;align-items:center;gap:6px;padding:0 20px;height:52px}
+  .mknav .hb{display:flex;align-items:center;gap:9px;margin-right:auto;color:#fff;text-decoration:none}
+  .mknav .hb img{height:16px}
+  .mknav .hb b{font-weight:500;font-size:14px}
+  .mknav .hb .tag{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#67D1EC;border:1px solid #2c4a55;border-radius:100px;padding:2px 7px}
+  .mknav a.hl{color:#aebfcb;text-decoration:none;font-size:13px;padding:8px 11px;border-radius:6px;white-space:nowrap}
+  .mknav a.hl:hover{color:#fff;background:rgba(255,255,255,.06)}
+  @media(max-width:860px){.mknav{overflow-x:auto}.mknav .hb .tag{display:none}}
+  .mk-wrap{max-width:920px;margin:0 auto;padding:0 24px}
+  .mk-block{padding:40px 0;border-bottom:1px solid var(--border)}
+  .mk-eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--purple);font-weight:600}
+  .mk-block h2{font-size:24px;font-weight:500;color:var(--ink);margin:8px 0 0}
+  .mk-block h3{font-size:15px;font-weight:600;color:var(--ink);margin:22px 0 8px}
+  .mk-block p{color:var(--muted-light);line-height:1.6;font-size:15px}
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+  .fact{border:1px solid var(--border);border-radius:var(--radius);padding:15px 17px;background:#fff}
+  .fact .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);font-weight:600}
+  .fact .v{font-size:15px;color:var(--ink);margin-top:5px;font-weight:500}
+  .copybox{background:var(--bg-panel);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;color:var(--ink);font-size:15px;line-height:1.65;margin-top:10px}
+  .one-liners li{margin:0 0 8px}
+  .swatches{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+  .sw{border:1px solid var(--border);border-radius:8px;overflow:hidden;width:118px}
+  .sw .chip{height:54px}
+  .sw .lab{font-size:11px;padding:7px 8px;color:var(--ink)}
+  .sw .lab b{display:block;font-weight:500}
+  .sw .lab span{color:var(--muted-light)}
+  .team{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:18px}
+  .person{border:1px solid var(--border);border-radius:var(--radius);padding:18px;background:#fff}
+  .person .ph{height:88px;width:88px;border-radius:50%;background:var(--bg-panel);border:1px dashed var(--line,#cdd3d0);display:flex;align-items:center;justify-content:center;color:var(--muted-light);font-size:11px;text-align:center;margin-bottom:12px}
+  .person h4{margin:0;font-size:16px;color:var(--ink);font-weight:600}
+  .person .role{font-size:13px;color:var(--purple);margin-top:2px}
+  .person .bio{font-size:13.5px;color:var(--muted-light);line-height:1.5;margin-top:10px}
+  .up{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#8a5a00;background:#fff4e3;border:1px dashed #f0b760;border-radius:6px;padding:4px 9px;margin:4px 6px 0 0}
+  .add{display:inline-block;font-size:12px;color:var(--blue)}
+  .asset-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+  .asset{border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;background:#fff;font-size:14px;color:var(--ink);min-width:200px}
+  .asset .d{font-size:12.5px;color:var(--muted-light);margin-top:4px}
+  .note-soft{font-size:13px;color:var(--muted-light);margin-top:14px}
+  .mk-vision{max-width:920px;margin:26px auto 0;padding:0 24px}
+  .mk-vision-card{border:1px solid #cfe0d9;background:linear-gradient(180deg,#f1faf6,#ffffff);border-radius:var(--radius);padding:20px 22px;display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}
+  .mk-vision-card .vk{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#0c7a55;font-weight:700;background:#e6f7f0;border:1px solid #9ad9bf;border-radius:100px;padding:4px 11px;white-space:nowrap}
+  .mk-vision-card .vt{flex:1 1 380px;min-width:260px}
+  .mk-vision-card .vt b{color:var(--ink);font-weight:600}
+  .mk-vision-card .vt p{font-size:14px;line-height:1.6;color:var(--muted-light);margin:6px 0 0}
+  .mk-status{display:inline-block;font-size:12px;color:#8a5a00;background:#fff4e3;border:1px solid #f0b760;border-radius:6px;padding:3px 9px;margin-top:10px}
+  .mk-angles li{margin:0 0 10px;line-height:1.5}
+  .mk-angles a{color:var(--blue);text-decoration:none;font-weight:500}
+  .mk-angles a:hover{text-decoration:underline}
+  .mk-angles .ang-d{color:var(--muted-light);font-size:13.5px}
+</style>
+<style>
+/* press-site standalone chrome */
+.pnav{position:sticky;top:0;z-index:50;background:#1C2429;border-bottom:1px solid #28323b}
+.pnav-in{max-width:1120px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:18px}
+.pbrand{display:flex;align-items:center;gap:9px;color:#fff;text-decoration:none;margin-right:auto}
+.pbrand img{height:23px}
+.pbrand .ptag{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#67D1EC;border:1px solid #2c4a55;border-radius:100px;padding:2px 8px}
+.plinks{display:flex;gap:6px;flex-wrap:wrap}
+.plinks a{color:#aebfcb;text-decoration:none;font-size:14px;padding:8px 11px;border-radius:6px}
+.plinks a:hover{color:#fff;background:rgba(255,255,255,.06)}
+.pcta{background:#896FF6;color:#fff;text-decoration:none;font-size:14px;font-weight:500;padding:9px 16px;border-radius:4px;white-space:nowrap}
+.pcta:hover{background:#7858f0}
+.page-hero .cta-row{margin-top:32px}
+.form textarea{width:100%;padding:12px 14px;border:1px solid #D0D5D2;border-radius:8px;font:inherit;background:#fff;color:#1C2429;resize:vertical;box-sizing:border-box}
+@media(max-width:820px){.plinks{display:none}}
+.pfoot{background:#14191D;color:#9AA6AE;padding:40px 24px 28px}
+.pfoot-in,.pfoot-links,.pfoot-addr{max-width:1120px;margin:0 auto}
+.pfoot-in{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;padding-bottom:18px;border-bottom:1px solid #28323b}
+.pfoot-tag{color:#fff;font-size:17px}
+.pfoot-badges span{border:1px solid #36424b;border-radius:8px;padding:7px 11px;font-size:12px;margin-left:8px}
+.pfoot-links{display:flex;gap:18px;flex-wrap:wrap;padding:18px 0;font-size:13px}
+.pfoot-links a{color:#aebfcb;text-decoration:none}.pfoot-links a:hover{color:#fff}
+.pfoot-addr{font-size:12px;color:#5f7180}
+</style>
+</head>
+<body data-page="guides">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="pnav">
+  <div class="pnav-in">
+    <a class="pbrand" href="index.html"><img src="assets/saber-logo.svg" alt="Saber"><span class="ptag">Newsroom</span></a>
+    <nav class="plinks" aria-label="Press">
+      <a href="index.html">Newsroom</a>
+      <a href="news-award.html">Awards</a>
+      <a href="media-kit.html">Media kit</a>
+      <a href="Saber_Fact_Sheet.pdf">Fact sheet</a>
+      <a href="https://www.sabermine.ai/" target="_blank" rel="noopener">Main site &#8599;</a>
+    </nav>
+    <a class="pcta" href="#press">Press enquiries &#8594;</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-hero dark motif">
+<div class="wrap">
+  <div class="eyebrow">Press &amp; Media Kit</div>
+  <h1>Everything the press needs to tell the Saber story.</h1>
+  <p class="sub">Boilerplate, key facts, product and company information, brand assets and founder details — everything you need to write about Saber, in one place.</p>
+</div>
+</section>
+
+<div class="mk-wrap">
+
+  <!-- FACTS -->
+  <section class="mk-block mk-sec" id="facts">
+    <div class="mk-eyebrow">Fast facts</div>
+    <h2>The essentials, at a glance.</h2>
+    <div class="facts">
+      <div class="fact"><div class="k">Company</div><div class="v">Sabermine Ltd (trading as Saber)</div></div>
+      <div class="fact"><div class="k">Founded</div><div class="v">2024 · Manchester, UK</div></div>
+      <div class="fact"><div class="k">HQ</div><div class="v">81 Fountain Street, 2nd Floor, Manchester, M2 2EE</div></div>
+      <div class="fact"><div class="k">Sector</div><div class="v">AI workflow automation for claims &amp; collections</div></div>
+      <div class="fact"><div class="k">Revenue</div><div class="v">£26m in first two years</div></div>
+      <div class="fact"><div class="k">Recognition</div><div class="v">2026 North West Technology &amp; Overall StartUp of the Year</div></div>
+      <div class="fact"><div class="k">Position</div><div class="v">First-mover in high-volume claims automation</div></div>
+      <div class="fact"><div class="k">Security</div><div class="v">ISO 27001 · Cyber Essentials · GDPR aligned</div></div>
+    </div>
+    <p class="note-soft">Please verify the exact incorporation date and any figures before quoting in print.</p>
+  </section>
+
+  <!-- ABOUT / BOILERPLATE -->
+  <section class="mk-block mk-sec" id="about">
+    <div class="mk-eyebrow">Boilerplate</div>
+    <h2>About Saber — copy &amp; paste.</h2>
+    <h3>Short (≈50 words)</h3>
+    <div class="copybox">Saber (Sabermine Ltd) is the workflow engine for high-volume claims and collections. It automates the document- and process-heavy work — intake, triage, eligibility, evidence and payout — with a human in the loop, on top of the systems firms already run. Founded in Manchester in 2024, Saber generated £26m in revenue in its first two years.</div>
+    <h3>Long (≈90 words)</h3>
+    <div class="copybox">Saber (Sabermine Ltd) is the workflow engine for high-volume claims and collections. Built for operations handling millions of near-identical cases on a deadline, it automates the document- and process-heavy work — intake, triage, eligibility, evidence and payout — while keeping a human in control of every judgement call, and sits on top of the systems firms already run rather than replacing them. Founded in Manchester in 2024, Saber reached £26m in revenue in two years and was named 2026 North West Technology StartUp of the Year and Overall StartUp of the Year. It is now extending its proven claims engine into debt collection and insurance.</div>
+    <h3>One-line descriptions</h3>
+    <ul class="one-liners">
+      <li>The workflow engine for high-volume claims and collections.</li>
+      <li>AI that does the document-heavy claims work — with a human in the loop.</li>
+      <li>Saber automates claims and collections at scale, on top of the systems you already run.</li>
+    </ul>
+  </section>
+
+  <!-- PRODUCT -->
+  <section class="mk-block mk-sec" id="product">
+    <div class="mk-eyebrow">Product</div>
+    <h2>What Saber does.</h2>
+    <p>Saber reads inbound correspondence and documents, extracts and classifies them, runs the routine steps (eligibility, evidence, next action), and surfaces the exceptions and judgement calls to a person to approve — with 100% QA and a time-stamped audit trail behind every action. It deploys in weeks, sits above existing case-management and core systems, and scales to millions of cases without scaling headcount.</p>
+    <div class="facts">
+      <div class="fact"><div class="k">Scale</div><div class="v">Millions of cases processed across live operations</div></div>
+      <div class="fact"><div class="k">Productivity</div><div class="v">Teams handling many times their caseload — no extra headcount</div></div>
+      <div class="fact"><div class="k">Accuracy</div><div class="v">98%+ document classification</div></div>
+      <div class="fact"><div class="k">Time-to-value</div><div class="v">Live in weeks — no rip-and-replace</div></div>
+    </div>
+    <h3>Markets</h3>
+    <p>Mass litigation &amp; collective redress · debt collection · insurance claims operations.</p>
+  </section>
+
+  <!-- STORY -->
+  <section class="mk-block mk-sec" id="story">
+    <div class="mk-eyebrow">The story / news hook</div>
+    <h2>Why Saber, why now.</h2>
+    <p>A Manchester AI startup, founded in 2024, has reached £26m in revenue in two years by solving an unglamorous but enormous problem: the gap between a document arriving and a person working it, across millions of claims. In 2026 it was named the North West's Technology StartUp of the Year and its Overall StartUp of the Year — and is now taking its proven claims engine into two markets under acute pressure: debt collection and insurance.</p>
+    <h3>Angles we can support</h3>
+    <p>A few directions the story can take, with a spokesperson and the data behind each available on request:</p>
+    <ul class="mk-angles">
+      <li><a href="news-award.html">The award &amp; growth story</a> — <span class="ang-d">a two-year-old Manchester startup at £26m, double winner at the 2026 UK StartUp Awards.</span></li>
+      <li><a href="news-debt-collection.html">Why debt collection is consolidating around AI</a> — <span class="ang-d">record arrears meeting tighter conduct rules, and what it does to cost-to-collect.</span></li>
+      <li><a href="news-insurance.html">The shrinking claims workforce</a> — <span class="ang-d">record claims volumes, a retiring workforce, and the human-in-the-loop model insurers have chosen.</span></li>
+    </ul>
+    <p class="note-soft">Interviews, commentary and supporting figures available via the press contact below.</p>
+  </section>
+
+  <!-- TEAM -->
+  <section class="mk-block mk-sec" id="team">
+    <div class="mk-eyebrow">Founders &amp; team</div>
+    <h2>Brief sheets.</h2>
+    <p>The founders and primary spokespeople for Saber.</p>
+    <div class="team">
+      <div class="person"><img src="assets/founder-mitch.jpg" alt="Mitch Shephard, Co-Founder of Saber" style="height:88px;width:88px;border-radius:50%;object-fit:cover;display:block;margin-bottom:12px"><h4>Mitch Shephard</h4><div class="role">Co-Founder</div><div class="bio">Co-founder of Saber, focused on building auditable, compliance-first automation for regulated claims and collections — every action logged, every step traceable.</div><div><a class="add" href="https://www.linkedin.com/in/mitchel-shephard-7b60a0b1/" target="_blank" rel="noopener">LinkedIn &#8599;</a></div></div>
+      <div class="person"><img src="assets/founder-jakub.jpg" alt="Jakub Lenski, Co-Founder of Saber" style="height:88px;width:88px;border-radius:50%;object-fit:cover;display:block;margin-bottom:12px"><h4>Jakub Lenski</h4><div class="role">Co-Founder</div><div class="bio">Co-founder of Saber, leading the product and engineering behind its 2–4 week enterprise deployments — proving ROI before the work buries the team.</div><div><a class="add" href="https://www.linkedin.com/in/jakub-lenski/" target="_blank" rel="noopener">LinkedIn &#8599;</a></div></div>
+    </div>
+    <p class="note-soft">The Saber team, Manchester.</p>
+    <img src="assets/team.jpg" alt="The Saber team, Manchester" style="width:100%;border-radius:var(--radius);margin-top:6px;border:1px solid var(--border)">
+  </section>
+
+  <!-- BRAND ASSETS -->
+  <section class="mk-block mk-sec" id="brand">
+    <div class="mk-eyebrow">Brand assets</div>
+    <h2>Logos, colours, fonts.</h2>
+    <h3>Logo</h3>
+    <div class="asset-row">
+      <div class="asset">Primary logo (SVG, on-screen) — in the site assets<div class="d">assets/saber-logo.svg</div></div>
+      <div class="asset"><a href="assets/saber-press-assets.zip" style="color:var(--blue);font-weight:500">Download press &amp; brand pack (ZIP) &#8595;</a><div class="d">Saber logo (SVG + white PNG), product imagery &amp; dashboard screenshots, brand guide</div></div>
+      <div class="asset">App / favicon mark <span class="up">Upload</span></div>
+    </div>
+    <h3>Colour palette</h3>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#1C2429"></div><div class="lab"><b>Ink</b><span>#1C2429</span></div></div>
+      <div class="sw"><div class="chip" style="background:#14191D"></div><div class="lab"><b>Deep</b><span>#14191D</span></div></div>
+      <div class="sw"><div class="chip" style="background:#896FF6"></div><div class="lab"><b>Purple</b><span>#896FF6</span></div></div>
+      <div class="sw"><div class="chip" style="background:#67D1EC"></div><div class="lab"><b>Cyan</b><span>#67D1EC</span></div></div>
+      <div class="sw"><div class="chip" style="background:#60D8BC"></div><div class="lab"><b>Mint</b><span>#60D8BC</span></div></div>
+      <div class="sw"><div class="chip" style="background:#F68722"></div><div class="lab"><b>Orange</b><span>#F68722</span></div></div>
+      <div class="sw"><div class="chip" style="background:#ED678B"></div><div class="lab"><b>Pink</b><span>#ED678B</span></div></div>
+      <div class="sw"><div class="chip" style="background:#F0EEED;border-right:1px solid #ddd"></div><div class="lab"><b>Off-white</b><span>#F0EEED</span></div></div>
+    </div>
+    <h3>Typography</h3>
+    <p>Brand typeface: <strong>PP Mori</strong> (headings, sentence case, no bold). Working fallback: <strong>Inter</strong>.</p>
+    <h3>Product imagery</h3>
+    <div class="asset-row">
+      <div class="asset">Dashboard &amp; workspace screenshots — in site assets<div class="d">assets/screenshots/</div></div>
+      <div class="asset"><a href="assets/saber-press-assets.zip" style="color:var(--blue);font-weight:500">Product &amp; dashboard screenshots</a><div class="d">Included in the press &amp; brand pack above</div></div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section class="mk-block mk-sec" id="awards">
+    <div class="mk-eyebrow">Awards &amp; recognition</div>
+    <h2>Recent wins.</h2>
+    <div class="facts">
+      <div class="fact"><div class="k">June 2026</div><div class="v">North West Technology StartUp of the Year — UK StartUp Awards</div></div>
+      <div class="fact"><div class="k">June 2026</div><div class="v">North West Overall StartUp of the Year — UK StartUp Awards</div></div>
+    </div>
+    <p class="note-soft">Add award logos/badges when received. <span class="up">Upload award badges</span></p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="mk-block mk-sec" id="contact">
+    <div class="mk-eyebrow">Press contact</div>
+    <h2>Talk to us.</h2>
+    <p>Press &amp; media enquiries: <strong>press@sabermine.ai</strong> · Manchester, UK · <a href="https://www.sabermine.ai/" target="_blank" rel="noopener">sabermine.ai</a></p>
+    <p class="note-soft">Media may use the boilerplate, facts and approved descriptions above. Please don't alter logos or quote unconfirmed figures.</p>
+  </section>
+
+</div>
+
+<section class="sec" id="press" style="background:var(--bg-panel)">
+<div class="wrap">
+  <div class="cta-panel motif reveal">
+    <div>
+      <h2>Press enquiries</h2>
+      <p>Interviews, commentary, data or assets &mdash; tell us what you need and we'll come back within one business day.</p>
+    </div>
+    <form class="form" data-press>
+      <div class="two">
+        <div><label for="pname">Name</label><input id="pname" type="text" required placeholder="Jane Smith"></div>
+        <div><label for="poutlet">Outlet</label><input id="poutlet" type="text" placeholder="Publication"></div>
+      </div>
+      <div><label for="pemail">Email</label><input id="pemail" type="email" required placeholder="jane@outlet.com"></div>
+      <div><label for="pmsg">What do you need?</label><textarea id="pmsg" rows="3" placeholder="Deadline, topic, and what you're working on"></textarea></div>
+      <button class="btn btn-primary" type="submit">Send to press@sabermine.ai <span class="arrow">&#8594;</span></button>
+      <p class="ok">Thanks &mdash; your email app will open addressed to press@sabermine.ai.</p>
+    </form>
+  </div>
+</div>
+</section>
+
+</main>
+
+<footer class="pfoot">
+  <div class="pfoot-in">
+    <div class="pfoot-tag">Humans approve the work. Saber handles the rest.</div>
+    <div class="pfoot-badges"><span>ISO 27001</span><span>Cyber Essentials</span></div>
+  </div>
+  <div class="pfoot-links"><a href="index.html">Newsroom</a><a href="media-kit.html">Media kit</a><a href="Saber_Fact_Sheet.pdf">Fact sheet (PDF)</a><a href="https://www.sabermine.ai/" target="_blank" rel="noopener">sabermine.ai</a><a href="mailto:press@sabermine.ai">press@sabermine.ai</a></div>
+  <div class="pfoot-addr">Sabermine Ltd &middot; 81 Fountain Street, 2nd Floor, Manchester, England, M2 2EE &middot; &copy; 2026 Sabermine Ltd.</div>
+</footer>
+<script src="assets/press.js"></script>
+</body>
+</html>
